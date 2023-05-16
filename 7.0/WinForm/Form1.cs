@@ -86,7 +86,7 @@ public partial class Form1 : Form
         button2.Enabled = false;
         richTextBox1.Clear();
         progressBar1.Value = 0;
-
+        
         var sw = Stopwatch.StartNew();
 
         await Task.Run(async () =>
@@ -174,6 +174,7 @@ public partial class Form1 : Form
         var stopwatch = Stopwatch.StartNew();
 
         int total = 0;
+
         foreach (string url in _urlList)
         {
             int contentLength = await ProcessUrlAsync(url, _client);

@@ -29,12 +29,12 @@ partial class Form1
     private void InitializeComponent()
     {
         button1 = new Button();
-        richTextBox1 = new RichTextBox();
         button2 = new Button();
-        progressBar1 = new ProgressBar();
         button3 = new Button();
         button4 = new Button();
         button5 = new Button();
+        richTextBox1 = new RichTextBox();
+        progressBar1 = new ProgressBar();
         SuspendLayout();
         // 
         // button1
@@ -47,14 +47,6 @@ partial class Form1
         button1.UseVisualStyleBackColor = true;
         button1.Click += button1_Click;
         // 
-        // richTextBox1
-        // 
-        richTextBox1.Location = new Point(12, 52);
-        richTextBox1.Name = "richTextBox1";
-        richTextBox1.Size = new Size(472, 357);
-        richTextBox1.TabIndex = 1;
-        richTextBox1.Text = "";
-        // 
         // button2
         // 
         button2.Location = new Point(108, 12);
@@ -64,13 +56,6 @@ partial class Form1
         button2.Text = "button2";
         button2.UseVisualStyleBackColor = true;
         button2.Click += button2_Click;
-        // 
-        // progressBar1
-        // 
-        progressBar1.Location = new Point(12, 415);
-        progressBar1.Name = "progressBar1";
-        progressBar1.Size = new Size(458, 23);
-        progressBar1.TabIndex = 3;
         // 
         // button3
         // 
@@ -102,6 +87,21 @@ partial class Form1
         button5.UseVisualStyleBackColor = true;
         button5.Click += button5_Click;
         // 
+        // richTextBox1
+        // 
+        richTextBox1.Location = new Point(12, 52);
+        richTextBox1.Name = "richTextBox1";
+        richTextBox1.Size = new Size(472, 357);
+        richTextBox1.TabIndex = 1;
+        richTextBox1.Text = "";
+        // 
+        // progressBar1
+        // 
+        progressBar1.Location = new Point(12, 415);
+        progressBar1.Name = "progressBar1";
+        progressBar1.Size = new Size(458, 23);
+        progressBar1.TabIndex = 3;
+        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
@@ -119,14 +119,13 @@ partial class Form1
         Load += Form1_Load;
         ResumeLayout(false);
     }
-
     #endregion
 
     private Button button1;
-    private RichTextBox richTextBox1;
     private Button button2;
-    private ProgressBar progressBar1;
     private Button button3;
     private Button button4;
     private Button button5;
+    private RichTextBox richTextBox1;
+    private ProgressBar progressBar1;
 }
